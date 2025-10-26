@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Codeing Iskole - Junior Secondary Coding School</title>
+  <meta content="Learn coding from the basics! CodeIsKole is an early coding LMS designed specifically for junior secondary students to master programming fundamentals." name="description">
+  <meta content="coding school, programming, junior secondary, LMS, learn to code, computer science education" name="keywords">
+  <link rel="stylesheet" href="assets/css/videoslider.css">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">codingiskole@gmail.com</a>
+        <i class="bi bi-phone"></i> +94 75 55 45 863
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!--<h1 class="logo me-auto"><a href="index.html">The Taurus</a></h1>
+      -->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#scope">Research Project Scope</a></li>
+          <li><a class="nav-link scrollto" href="#milestones">Milestones</a></li>
+          <li><a class="nav-link scrollto" href="#documents">Documentation</a></li>
+          <li><a class="nav-link scrollto" href="#presentations">Presentations</a></li>
+          <li><a class="nav-link scrollto" href="#ourteam">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section1 id="hero" class="home">
+    <img class="image-slide active" src="./assets/img/world-braille-day-scaled.jpg" alt="Students learning coding">
+    <img class="image-slide" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Programming fundamentals">
+    <img class="image-slide" src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Interactive coding lessons">
+    <img class="image-slide" src="./assets/img/c2.jpg" alt="Team collaboration in coding">
+    <div class="content">
+        <h1>Welcome To <span>Codeing Iskole</span></h1>
+        <p>Early Coding LMS for Junior Secondary Students - Master Programming from the Ground Up</p>
+        <a href="#about">About Project</a>
+    </div>
+    <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="slider-navigation" style="pointer-events: none;">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section1>
+
+<script type="text/javascript">
+    const slides = document.querySelectorAll(".image-slide");
+    let currentSlide = 0;
+
+    // Function to change the active slide
+    function changeSlide() {
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add("active");
+    }
+
+    // Set an interval to automatically change the slide every 5 seconds
+    const interval = setInterval(changeSlide, 4000);
+</script>
+
+
+
+<!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <br><br>
+              <h3>Why Choose Codeing IsKole?</h3>
+              <p>
+                You selected CodeIsKole for our comprehensive 
+                programming curriculum designed specifically 
+                for junior secondary students. Our interactive 
+                learning platform combines hands-on coding 
+                exercises, project-based learning, and real-world 
+                applications to make programming accessible and 
+                engaging for young learners. We focus on building 
+                strong foundations in computational thinking and 
+                problem-solving skills.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-9 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-code-alt"></i>
+                    <h5>Interactive Coding Environment</h5>
+                    <p>Students learn programming through our interactive 
+                      coding environment that provides real-time feedback 
+                      and instant results. Our platform supports multiple 
+                      programming languages including Python, JavaScript, 
+                      and Scratch, making coding accessible and fun.</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-book-content"></i>
+                    <h5>Structured Learning Path</h5>
+                    <p>Our curriculum follows a carefully designed progression 
+                      from basic concepts to advanced programming. Students start 
+                      with visual programming and gradually move to text-based 
+                      coding, building confidence and competence step by step.</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-group"></i>
+                    <h5>Project-Based Learning</h5>
+                    <p>Students work on real-world projects that solve 
+                      meaningful problems. From creating simple games to 
+                      building websites, our project-based approach helps 
+                      students understand how programming applies to everyday 
+                      challenges and builds portfolio-ready skills.</p>
+                  </div>
+                </div>
+                
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-trophy"></i>
+                    <h5>Gamified Learning Experience</h5>
+                    <p>Our platform incorporates game elements like badges, 
+                       points, and achievements to motivate students. This 
+                       gamified approach makes learning engaging and helps 
+                       students track their progress while having fun. 
+                    </p>
+                  </div>
+                </div><!-- End .content-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container-fluid">
+        <div class="section-title">
+          <h2>About Codeing Iskole</h2>
+          <p>Empowering the next generation of programmers</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 image-box d-flex justify-content-center align-items-stretch position-relative">
+          </div>
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Empowering Junior Secondary Students with Essential Programming Skills for the Digital Future.</h3>
+
+            <p>CodeIsKole is designed to bridge the gap between traditional 
+              education and the rapidly evolving digital world. Our platform 
+              introduces junior secondary students to programming concepts 
+              through an engaging, interactive learning management system 
+              that makes coding accessible, fun, and relevant to their lives.
+            </p>
+
+            <p>Our curriculum starts with visual programming using block-based 
+              languages like Scratch, helping students understand fundamental 
+              programming concepts without the intimidation of syntax. Students 
+              then progress to text-based programming with Python and JavaScript, 
+              building real projects like games, websites, and mobile apps. 
+              Our project-based approach ensures that students not only learn 
+              to code but also develop critical thinking, problem-solving, 
+              and collaboration skills essential for success in the 21st century.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Scope Section ======= -->
+    <section id="scope" class="scope">
+      <div class="container">
+        <div class="section-title">
+          <h2>Research Project Scope</h2>
+ 
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                  <h5><i class=''></i> Literature Survey</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h5><i class=''></i> Research Gap</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h5><i class=''></i> Research Problem</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                  <h5><i class=''></i> Objectives</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
+                  <h5><i class=''></i> Methodology</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-6">
+                  <h5><i class=''></i> Tools & Technologies</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <h3>Literature Survey</h3>
+                  <div class="col-lg-8 text-center order-1 order-lg-2">
+                    <img src="./assets/img/favicon.png" alt="Literature Survey" class="img-fluid">
+                  </div>
+                  <div class="col-lg-12 details order-2 order-lg-1">
+                    
+                    <p>Coding has become an essential 21st-century skill, promoting problem-solving, creativity, and computational thinking across disciplines. However, traditional teaching methods often focus on syntax and correctness rather than creativity, exploration, or persistence, creating a gap between classroom learning and real-world coding skills.</p>
+                    <p>Adaptive learning systems have emerged to address these issues by personalizing instruction through AI and data analytics. Platforms like Knewton and Duolingo demonstrate how learning content can adjust dynamically to each student’s needs, though most still ignore emotional factors that affect engagement.</p>
+
+                   
+                    <p>Recent advances in AI and machine learning now enable deeper personalization, including emotion-aware systems that detect frustration or disengagement and adapt lessons accordingly. In parallel, teacher-support dashboards provide real-time analytics to guide instruction.</p> 
+                    <p>Despite progress, existing systems often operate in isolation—focusing on either cognitive, emotional, or analytic adaptivity. There remains a need for a unified, school-focused platform that integrates adaptive assessment, emotional intelligence, and teacher insights to create more inclusive and effective coding education experiences.</p>
+                      </p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <h3>Research Gap</h3>
+                  <div class="col-lg-12 details order-2 order-lg-1">
+                    
+                    <p>Although coding is increasingly taught in schools, current teaching and assessment methods fail to reflect how students truly learn programming. Lessons often focus on whether code “works” rather than on creativity, reasoning, or persistence—penalizing curious learners who explore and rewarding rote memorization.</p>
+                    <p>Adaptive learning systems have begun to personalize education, yet in coding they remain limited and fragmented. Most platforms track only cognitive performance, overlooking emotional factors like frustration or motivation. Advanced AI tools capable of generating personalized exercises and feedback are underused, while affective computing technologies that can detect and respond to learner emotions are rarely integrated.</p>
+
+                    <p>Teachers, too, receive minimal actionable insights from learner data. Current dashboards summarize completion rates but fail to highlight misconceptions or guide instruction.
+                    </p>
+
+                    <p>What’s missing is a unified, AI-powered ecosystem that combines adaptive assessment, emotion recognition, generative AI, multimodal scaffolding, and teacher analytics. This study aims to fill that gap by creating a holistic learning platform that supports both cognitive and emotional growth, making coding education more inclusive, equitable, and effective.</p>
+                    
+
+                  </div>
+                  <div class="col-lg-8 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80" alt="Research Gap" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <h3>Research Problem</h3>
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    
+                    <p class="fst-italic">Coding is now a fundamental skill, yet traditional teaching and assessment methods are outdated. Current approaches focus on whether code runs correctly, neglecting creativity, problem-solving strategies, and perseverance. This rigid system misrepresents students’ abilities, leaving fast learners bored and struggling students overwhelmed.</p>
+                    
+                    <p>While adaptive learning platforms and AI tools exist, they remain fragmented—tracking only accuracy or speed, generating exercises in isolation, or providing raw data without actionable insights. Emotional factors such as frustration or disengagement, which strongly affect learning, are rarely addressed. Teachers, too, lack meaningful guidance to support diverse learners.
+                    </p>
+                    <p>The core problem is the absence of a unified, AI-powered adaptive system that:
+                    </p>
+                    <p>Personalizes learning with intelligent question generation and dynamic difficulty.
+
+<p>Recognizes and responds to students’ emotional states.</p>
+
+
+<p>Supports multiple learning styles and abilities.</p>
+
+<p>Provides actionable insights for teachers.</p>
+
+<p>Operates securely in classroom settings.</p>
+
+<p>Without such integration, coding education fails to meet students’ cognitive, emotional, and individual needs, limiting engagement, equity, and meaningful learning outcomes.</p>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Research Problem" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <h3>Research Objectives</h3>
+                  <div class="col-lg-6 details order-2 order-lg-1">
+                    
+                    <p class="fst-italic"><h5>Main Objective</h5></p>
+                    <p>The main goal of this study is to design, develop, and evaluate an AI-powered adaptive learning system for school students aged 10–12. Unlike traditional “one-size-fits-all” coding instruction, this platform will personalize learning in real time by adjusting difficulty, content, and support based on each student’s performance and engagement.
+                    </p>
+                    <p>The system will integrate multiple AI techniques, including adaptive assessment generation, skill modeling, affective computing, biometric authentication, and teacher-facing analytics, creating a holistic ecosystem. This approach addresses current gaps in coding education by:</p>
+<p>Delivering personalized, responsive learning experiences.</p>
+
+<p>Detecting and responding to students’ emotional states.</p>
+
+<p>Providing actionable insights to educators to guide instruction.</p>
+                    <p class="fst-italic"><h5>Sub Objectives</h5></p>
+                    <p>Interactive Learning Environment</p>
+                    <p>Age-Appropriate Content Delivery</p>
+                    <p>Gamification & Motivation System</p>
+                    <p>Progress Tracking & Assessment</p>
+                    <p>Personalized Learning Paths</p>
+                  </div>
+                  <div class="col-lg-6 text-center order-1 order-lg-2">
+                    <img src="./assets/img/objectives.png" alt="Objectives" class="img-fluid">
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <h3>Methodology</h3>
+                  <div class="col-lg-12 details order-2 order-lg-1">
+                    
+                    <p>This research develops an interactive, gamified web-based Learning Management System (LMS) to teach Python programming to Grade 6 students in Sri Lanka. The system integrates gamification, adaptive learning, and AI-driven educational technology to provide curriculum-aligned, engaging, and personalized content.</p>
+                    <p>Key Features:</p>
+                    <p>Gamified Lessons: Programming concepts (variables, loops, conditionals) are delivered as challenges, quizzes, and puzzles with points, badges, and rewards to encourage persistence and problem-solving.
+
+<p></p><br>Learning Materials: Videos and downloadable resources aligned with the Grade 6 ICT syllabus allow self-paced study, while teachers can add supplementary content.
+
+<p></p><br>Embedded Python Compiler: Students can code and execute programs directly on the platform, receiving instant feedback to reinforce learning.
+
+<p></p><br>Adaptive Feedback & Analytics: Student performance is continuously monitored, offering personalized suggestions, while teachers access dashboards to track progress and adjust instruction.
+
+<p></p><br>Teacher Support & Curriculum Alignment: Reports and dashboards reduce workload and align with the National Education Framework (2021).
+
+<p></p><br>Scalability & Security: Supports 1,000+ simultaneous users, with role-based authentication and optional face recognition.
+
+<p></p><br>Development Process: Built using an Agile Scrum approach with the MERN stack for frontend, Flask for AI model integration, and MongoDB for storage. AI models (GPT-2 for question generation, CNN for emotion recognition) are trained, validated, and integrated iteratively to ensure robustness and responsiveness.</p>
+                    
+                  </div>
+                  <div class="col-lg-8 text-center order-1 order-lg-2">
+                    <img src="./assets/img/pic1.png" alt="Methodology" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-6">
+                <div class="row gy-4">
+                  <h3>Tools & Technologies</h3>
+                  <div class="col-lg-4 details order-2 order-lg-1">
+                    
+                    
+                    
+                    <p>JavaScript</p>
+                    <p>Python</p>
+                    <p>MongoDB</p>
+                    <p>Node.js</p>
+                    <p>GitHub</p>
+                    <p>Figma</p>
+                    <p>VS Code</p>
+
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="./assets/img/git.png" alt="Development Tools" class="img-fluid">
+                    <img src="./assets/img/python.png" alt="Programming Languages" class="img-fluid">
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="./assets/img/Postman.jpg" alt="Mobile Development" class="img-fluid">
+                    <img src="./assets/img/figma.png" alt="Database Technologies" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Scope Section -->
+
+    <!-- ======= Milestones Section ======= -->
+    <section id="milestones" class="milestones">
+      <div class="container">
+
+        <div class="row">
+          <!-- <div class="col-lg-4"> -->
+          <div class="section-title">
+            <h2>Milestones</h2>
+          </div>
+          <!-- </div> -->
+
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="#scope">Project Proposal</a></h4>
+                <p>Proposal presentation and the proposal report submission.</p><br>
+                <p>Marks Allocated : 12%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="#scope">Progress Presentation 1</a></h4>
+                <p>50% progress presentation of the research project.</p><br>
+                <p>Marks Allocated : 15%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="#scope">Research Paper</a></h4>
+                <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p><br>
+                <p>Marks Allocated : 10%</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-xl-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="#scope">Progress Presentation 2</a></h4>
+                <p>90% progress presentation of the research project</p><br>
+                <p>Marks Allocated : 18%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="#scope">FInal Assessment</a></h4>
+                <p>Submission of final reports and the final presentation of the research.</p><br>
+                <p>Marks Allocated : 10%</p>
+              </div>
+            </div>
+
+            <div class="col-xl-4 mt-4">
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="icon"><i class="fas fa-file-powerpoint"></i></div>
+                <h4><a href="#scope">Viva</a></h4>
+                <p>Final viva of the research Commerclization Video with an User Testing and Research Team Member.</p><br>
+                <p>Marks Allocated : 10%</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- End Milestones Section -->
+
+
+    <!-- ======= Documentation Section =======-->
+    <section id="documents" class="documents section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Documentation</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-7">
+                  <h5>Topic Assessment</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-8">
+                  <h5>Project Charter</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-9">
+                  <h5>Proposal Document</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-10">
+                  <h5>Research Paper</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-13">
+                  <h5>Final Report</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-7">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Topic Assessment</h3>
+                    <p>
+                     </p>
+                     <p><h4><a href="https://drive.google.com/file/d/1SUY22uTOUJaWBF9oAp9EcTKaMbOitMhx/view?usp=sharing"><i class=''></i> Topic Assessment Document</a></h4></p>
+                     <p>Click to Downlode</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Documentation" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-8">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Project Charter</h3>
+                    <p>
+                      <h4>Official project charter document outlining project scope and objectives</h4>
+                    </p>
+                    <p><h4><a href="https://drive.google.com/file/d/1FSVJuaypzbq_16cgbPHopburkQy0RjiX/view?usp=sharing" target="_blank"><i class=''></i> Project_Charter</a></h4></p>
+                    <p>Click to Downlode</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Project Charter" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-9">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Proposal Document</h3>
+                    <p><h4>
+                      Individual proposal documents from team members</h4>
+                    </p>
+                      <p><h4><a href="https://drive.google.com/file/d/122d3mDptwBAW8ILRnVQ9QpAFrBAp7G_2/view?usp=drive_link" target="_blank"><i class=''></i> IT21262722_Perera T.A.L</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/17YE2ioR-na-P76V1UxzWVuf_5Bv11u79/view?usp=drive_link" target="_blank"><i class=''></i> IT21820182_Nananyakkara N.V.W.W.N.K</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1niO6Nzo5BFi9_Pok81nrwX9r7f7WTa_1/view?usp=drive_link" target="_blank"><i class=''></i> IT21306822_Nallapremuma S</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1b6vz_v_uaoxu3YRmjrtP5gRatTm5reN2/view?usp=drive_link" target="_blank"><i class=''></i> IT21825446 Hansaja K.D.D</a></h4></p>
+                    </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Proposal Document" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-10">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Research paper</h3>
+                    <p>
+                    </p>
+                    <p><h4><a href="https://drive.google.com/file/d/1FSVJuaypzbq_16cgbPHopburkQy0RjiX/view?usp=drive_link" target="_blank"><i class=''></i>Research paper</a></h4></p>
+
+                     <p>Click to Downlode</p>
+                    </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Research Logbook" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-pane" id="tab-13">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Final Report</h3>
+                    <p><h4>
+                      Comprehensive final report of the coding education research project</h4>
+                    </p>
+                      <p><h4><a href="https://drive.google.com/file/d/1gvDoTh42nAwb2BY0LXVAbA5oRIqMKCni/view?usp=drive_link" target="_blank"><i class=''></i> Final Project Report</a></h4></p>
+                        <p><h4>
+                          Reports by Group Members</h4>
+                        </p>
+                           <p><h4><a href="https://drive.google.com/file/d/1uyjzsunA7OT9WBNusDzzzJufSaX-Ffbo/view?usp=drive_link" target="_blank"><i class=''></i> IT21262722_Perera T.A.L</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1TRVDCC1YdGWr5EhLP8dyLf9MjXFyKkOo/view?usp=drive_link" target="_blank"><i class=''></i> IT21820182_Nananyakkara N.V.W.W.N.K</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1HRaycYgpO9fxi1LBh6SL_jaFchHqMV5B/view?usp=drive_link" target="_blank"><i class=''></i> IT21306822_Nallapremuma S</a></h4></p>
+                      <p><h4><a href="https://drive.google.com/file/d/1fl-LeLOetzq8J3cRuLiCd2zYYQIbZiy1/view?usp=drive_link" target="_blank"><i class=''></i> IT21825446 Hansaja K.D.D</a></h4></p>
+                    </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Final Report" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Documentation Section -->
+
+    <!-- ======= Presentation Section ======= -->
+    <section id="presentations" class="presentations">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+          </div>
+
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <div class="section-title">
+              <h2>Presentations</h2>
+             
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="#https://drive.google.com/file/d/1xVPYH7A0Z1K2aEb6yiW7sLxW24M54QGg/view?usp=drive_link"><i class=''></i> Proposal Presentation</a></h4>
+              <p class="description">Click to View </p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="https://docs.google.com/presentation/d/10FV6W2p7l32ZMol4TCHzVfrXf0aCptRM/edit?usp=drive_link&ouid=105424343412497394749&rtpof=true&sd=true"><i class=''></i>  Progress Presentation I</a></h4>
+              <p class="description">Click to View </p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="#https://drive.google.com/file/d/1hYYTeCvuuod_9lWrSwuk3HCowOi2KYAP/view?usp=drive_link"><i class=''></i>  Progress Presentation II</a></h4>
+              <p class="description">Click to View </p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href="#https://drive.google.com/file/d/12Ad5KEA1tzBwEhgi9LoHbs81-nw7BuBi/view?usp=drive_link"><i class=''></i> Final Presentation</a></h4>
+              <p class="description">Click to View </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Presentation Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="ourteam" class="ourteam">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="./assets/img/team/supervisor.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ms. Jenny Krishara</h4>
+                <span>Supervisor</span>
+                <p>Senior Lecturer</p>
+
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="./assets/img/team/cosupervisor.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Dinuka Wijendra </h4>
+                <span> Co-supervisor</span>
+                <p>Senior Lecturer (Higher Grade)</p>
+
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="./assets/img/team/member1.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Perera T.A.L</h4>
+                <span>IT21262722</span>
+               
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="./assets/img/team/member2.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Hansaja K.D.D</h4>
+                <span>IT21825446</span>
+                
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="./assets/img/team/member4.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nallaperuma S</h4>
+                <span>IT21306822</span>
+                
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="./assets/img/team/member3.PNG" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nanayakkara N.V.W.W.N.K</h4>
+                <span>IT21820182</span>
+               
+                <div class="social">
+                  <a><i class="ri-twitter-fill"></i></a>
+                  <a><i class="ri-facebook-fill"></i></a>
+                  <a><i class="ri-instagram-fill"></i></a>
+                  <a href="" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End about us Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="section-title">
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7985117576864!2d79.97075581477283!3d6.914677495003823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db1a6771c5%3A0x2c63e344ab9a7536!2sSri%20Lanka%20Institute%20of%20Information%20Technology!5e0!3m2!1sen!2slk!4v1654861438602!5m2!1sen!2slk"
+                  width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="info mt-4">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>SLIIT Malabe Campus, New Kandy Rd, Malabe, SriLanka</p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>codeingiskole@gmail.com</p>
+                </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="info w-100 mt-4">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call:</h4>
+                      <p> +94 75 55 45 863</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>codingiskole</h3>
+            <p>
+              Malabe ,Sri Lanka <br><br>
+              <strong>Phone:</strong> +94 75 55 45 863<br>
+              <strong>Email:</strong> codingiskole@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#scope">Research Project Scope</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#documents">Documentation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#presentations">Presentations</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#milestones">Milestones</a></li>
+             
+              <li><i class="bx bx-chevron-right"></i> <a href="#ourteam">Team</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Contact US</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">codingiskole@gmail.com</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">+94 75 55 45 863</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Malabe, Sri Lanka</a></li>
+              </ul>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>CodeIsKole</span> 2025 </strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
